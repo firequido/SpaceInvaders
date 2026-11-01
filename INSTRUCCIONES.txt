@@ -1,0 +1,70 @@
+SPACE INVADERS
+
+El juego consiste en disparar a las naves enemigas antes de que lleguen
+a la parte de abajo. Empiezas con 3 vidas y cada nave que destruyes suma
+un punto. Al terminar una ronda aparecen más enemigos.
+
+Qué hay en las carpetas
+
+codigo: aquí están los archivos del juego. El archivo para iniciarlo
+es main.py. Las carpetas img y sounds tienen las imágenes y los sonidos.
+puntajes.txt guarda los nombres y los puntos de los jugadores.
+
+ejecutable: tiene SpaceInvaders.exe para abrir el juego en Windows
+sin instalar Python. Esta versión guarda sus puntajes por separado.
+
+Cómo abrir el juego
+
+La forma más fácil en Windows es entrar a la carpeta ejecutable
+y abrir SpaceInvaders.exe con doble clic.
+
+Para abrirlo desde el código necesitas Python y Pygame.
+Se probó con Python 3.13. Abre la carpeta codigo en Visual Studio Code
+y, en la terminal de esa carpeta, escribe:
+
+python -m pip install -r requirements.txt
+
+Cuando termine, escribe:
+
+python main.py
+
+No borres ni cambies de lugar las imágenes, los sonidos o los archivos
+del juego, porque se necesitan para que funcione completo.
+
+Cómo jugar
+
+En el menú usa las flechas de arriba y abajo para elegir una opción
+y Enter para entrar. Puedes iniciar una partida, ver los puntajes
+o entrar a Acerca de.
+
+Durante la partida:
+- Flechas o WASD para mover la nave.
+- Espacio para disparar.
+- Esc para regresar al menú.
+
+Si un enemigo llega abajo pierdes una vida. Al quedarte sin vidas
+termina la partida. Cada tres niveles recibes una vida extra y puedes
+tener una bala más de reserva, hasta llegar al límite del juego.
+
+Si superas el puntaje más alto puedes escribir tu nombre y guardarlo
+con Enter o con el botón Aceptar. Esc permite volver sin guardarlo.
+Con los puntajes que vienen en la carpeta necesitas más de 55 puntos
+para registrar un nuevo récord.
+
+En Puntajes y Acerca de puedes volver con el botón < o con Esc.
+Para salir del juego cierra la ventana o presiona Esc desde el menú.
+
+Revisión
+
+Se revisó que los archivos de Python no tuvieran errores de escritura
+que impidieran leer el código. También se hicieron pruebas automáticas
+para cargar el menú, las otras pantallas, las imágenes y los sonidos,
+y comprobar una parte de la partida y el regreso al menú.
+Estas pruebas no cubren una partida completa ni otras computadoras.
+
+Para entregar el código
+
+Incluye la carpeta codigo completa, con sus imágenes y sonidos.
+No basta con mandar solo main.py, porque usa los demás archivos.
+La carpeta ejecutable sirve para abrir el juego directamente en Windows
+y se puede agregar si también la piden.
